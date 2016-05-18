@@ -550,6 +550,36 @@
 	    <p><a href="https://wiki.openstack.org/wiki/HypervisorSupportMatrix">HypervisorSupportMatrix</a></p>
 	    <img src="img/NovaCILoopMay2015.png" class="plain"/>
 	  </section>
+	  <section>
+	    <h3>Virtualización de redes</h3>
+	    <ul>
+	      <li>Espacios de nombres de red</li>
+	      <li>iptables</li>
+	      <li>Plugins ml2:
+		<ul>
+		  <li>OpenvSwitch</li>
+		  <li>Nuage</li>
+		  <li>OpenContrail</li>
+		  <li>...</li>
+		</ul>
+	      </li>
+	      <li>SR-IOV</li>
+	      <li>LBaaS, VPNaaS, FWaaS</li>
+	      <li>IPv6</li>	      
+	  </section>
+	  <section>
+	    <h3>Virtualización de almacenamiento</h3>
+	    <ul>
+	      <li><a href="https://wiki.openstack.org/wiki/CinderSupportMatrix"> CinderSupportMatrix </a></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Otras consideraciones</h3>
+	    <ul>
+	      <li>Arquitectura "Leaf/spine"</li>
+	      <li>Commodity hardware</li>
+	    </ul>
+	  </section>
 	</section>
 	<section>
 	  <section>
@@ -581,7 +611,6 @@
 	    <ul>
 	      <li>Equivale a una SAN</li>
 	      <li>Cinder</li>
-	      <li><a href="https://wiki.openstack.org/wiki/CinderSupportMatrix"> CinderSupportMatrix </a></li>
 	    </ul>
 	  </section>
 	  <section>
@@ -589,26 +618,17 @@
 	    <ul>
 	      <li>Virtualización completa de la red de un CPD</li>
 	      <li>SDN</li>
-	      <li>Software defined Datacenter</li>
+	      <li>Software Defined Datacenter</li>
+	      <li>NFV</li>
 	      <li>Neutron</li>
-	      <li>Múltiples "plugins":
-		<ul>
-		  <li>OpenvSwitch</li>
-		  <li>Nuage</li>
-		  <li>OpenContrail</li>
-		  <li>VMware NSX</li>
-		  <li>Midokura</li>
-		</ul>
-	      </li>
 	    </ul>
 	  </section>
 	  <section>
-	    <h3>Sistemas de ficheros en red</h3>
+	    <h3>Sistemas de ficheros compartidos</h3>
 	    <ul>
 	      <li>Manila</li>
-	      <li>NAS: NFS, CIFS</li>
-	      <li>Hardware: NetAPP, EMC, ...</li>
-	      <li>Shares: GlusterFS, CephFS, ZFS, ...</li>
+	      <li>Proyecto escindido de cinder</li>
+	      <li><a href="http://docs.openstack.org/developer/manila/devref/index.html#share-backends"Múltiples "backends"</a></li>
 	    </ul>
 	  </section>
 	  <section>
@@ -635,6 +655,10 @@
 	      <li>Kubernetes, Swarm?</li>
 	      <li>Gestión automatizada de máquinas virtuales o físicas que ejecutan contenedores</li> 
 	    </ul>
+	  </section>
+	  <section>
+	    <h3>HPC?</h3>
+	    <p><a href="http://www.snia.org/sites/default/files/CSI/OpenStack_HPC_Final.pdf">High Performance Computing OpenStack Options</a></p>
 	  </section>
 	  <!-- <section> -->
 	  <!--   <h3>SR-IOV</h3> -->
@@ -675,58 +699,51 @@
 	<!--   </section> -->
 	<!-- </section> -->
 
-	<!--   <section> -->
-	<!--     <h3>Cloud administration</h3> -->
-	<!--     <ul> -->
-	<!--       <li>The main purpose of a system administrator is to -->
-	<!-- 	keep applications up and running properly and never -->
-	<!-- 	lost data</li> -->
-	<!--       <li>In this area there are two differents profiles: -->
-	<!-- 	<ul> -->
-	<!-- 	  <li>"Cloud application system administrator": -->
-	<!-- 	Deploys and maintains applications running on the -->
-	<!-- 	    cloud</li> -->
-	<!-- 	  <li>"Cloud system administrator": Manages the cloud -->
-	<!-- 	    platform</li> -->
-	<!--       </ul></li> -->
-	<!--     </ul> -->
-	<!--   </section> -->
-	<!--   <section> -->
-	<!--     <h3>Cloud application system administrator</h3> -->
-	<!--     <ul> -->
-	<!--       <li>Common to public or private clouds</li> -->
-	<!--       <li>Overall knowledge of cloud resources</li> -->
-	<!--       <li>REST APIs</li> -->
-	<!--       <li>Cloud Orchestration: Cloudformation and Heat</li> -->
-	<!--       <li>Image Management and transformation</li> -->
-	<!--       <li>Instance life cycle</li> -->
-	<!--       <li>Object Storage</li> -->
-	<!--       <li>Block Storage</li> -->
-	<!--       <li>Containers</li> -->
-	<!--       <li>Monitoring</li> -->
-	<!--       <li>Automation</li> -->
-	<!--       <li>Configuration management</li> -->
-	<!--     </ul> -->
-	<!--   </section> -->
-	<!--   <section> -->
-	<!--     <h3>Cloud system administrator</h3> -->
-	<!--     <ul> -->
-	<!--       <li>Not for juniors ;)</li> -->
-	<!--       <li>Deep knowledge of underlying technologies: -->
-	<!-- 	virtualization, networking and storage</li> -->
-	<!--       <li>Monitoring</li> -->
-	<!--       <li>Automation</li> -->
-	<!--       <li>Configuration management</li> -->
-	<!--     </ul> -->
-	<!--   </section> -->
-	<!-- </section> -->
-	<!-- <section> -->
-	<!--   <h3 style="color:white; -->
-	<!--       text-decoration:underline">Thanks</h3> -->
-	<!--   <p style="color: white;">Alberto Molina Coballes</p> -->
-	<!--   <p style="color: white;">Teacher at IES Gonzalo Nazareno</p> -->
-	<!--   <p style="color: white;">@alberto_molina</p> -->
-	<!-- </section> -->
+	<section>
+	  <section>
+	    <h3>Administración de OpenStack</h3>
+	    <ul>
+	      <li>La principal responsabilidad de un administrador de
+	      sistemas es mantener las aplicaciones funcionando
+	      correctamente y no perder jamás los datos</li>
+	      <li>Dos perfiles claramente diferentes:
+		<ul>
+		  <li>"Administrador de las aplicaciones en nube":
+		Despliega y mantiene las aplicaciones funcionado sobre
+		infraestructura en nube</li>
+		  <li>"Administrador de IaaS": Maneja la
+		    plataforma de IaaS</li>
+	      </ul></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Administrador de las aplicaciones en nube</h3>
+	    <ul>
+	      <li>Común a nube privada o pública</li>
+	      <li>Conocimiento amplio de los recursos de la nube</li>
+	      <li>REST APIs</li>
+	      <li>Orquestación: Cloudformation y Heat</li>
+	      <li>Gestión y transformación de imágenes</li>
+	      <li>Ciclo de vida de instancias</li>
+	      <li>Almacenamiento de objetos</li>
+	      <li>Almacenamiento de bloques</li>
+	      <li>Contenedores</li>
+	      <li>Monitorización, automatización y gestión de la configuración</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Administrador de IaaS</h3>
+	    <ul>
+	      <li>No para juniors ;)</li>
+	      <li>Conocimiento profundo de las tecnologías
+		subyacentes: virtualización, redes y almacenamiento</li>
+	      <li>Conocimiento profundo de los componentes del
+	      software IaaS</li>
+	      <li>Monitorización, automatización y gestión de la configuración</li>
+	    </ul>
+	  </section>
+	</section>
+	<section>
       </div>
     </div>
 

@@ -41,35 +41,35 @@
       <div class="slides">
 	<section>
 	  <h2>OpenStack</h2>
-	  <p>
-	    <a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a>
-	  </p>
+	  <p><a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a></p>
+	  <p>IES Gonzalo Nazareno</p>
 	  <p>
 	    <a href="http://creativecommons.org/licenses/by-sa/3.0/">
 	      <img src="img/cc_by_sa.png" width="100px" class="plain"/></a>
 	  </p>
+	  <p><small>Seminario impartido en el CICA. 20 de Mayo de 2016</small></p>
 	  <p><small>Theme by: <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></small></p>
 	  
 	</section>
-	<section>
-	  <h3>Índice</h3>
-	  <ul>
-	    <li>Evolución de la infraestructura</li>
-	    <li>De la nube pública a la privada</li>
-	    <li>Software libre para IaaS</li>
-	    <li>¿Por qué OpenStack?</li>
-	    <li>Componentes y arquitectura de OpenStack</li>
-	    <li>Demo de OpenStack</li>
-	    <li>Referencias:
-	      <ul>
-		<li>OpenStack Doc: docs.openstack.org</li>
-		<li><a href="http://iesgn.github.io/emergya/">http://iesgn.github.io/emergya/</a></li>
-	      </ul>
-	  </ul>
-	</section>
+	<!-- <section> -->
+	<!--   <h3>Índice</h3> -->
+	<!--   <ul> -->
+	<!--     <li>Evolución de la infraestructura</li> -->
+	<!--     <li>De la nube pública a la privada</li> -->
+	<!--     <li>Software libre para IaaS</li> -->
+	<!--     <li>¿Por qué OpenStack?</li> -->
+	<!--     <li>Componentes y arquitectura de OpenStack</li> -->
+	<!--     <li>Demo de OpenStack</li> -->
+	<!--     <li>Referencias: -->
+	<!--       <ul> -->
+	<!-- 	<li>OpenStack Doc: docs.openstack.org</li> -->
+	<!-- 	<li><a href="http://iesgn.github.io/emergya/">http://iesgn.github.io/emergya/</a></li> -->
+	<!--       </ul> -->
+	<!--   </ul> -->
+	<!-- </section> -->
 	<section>
 	  <section>
-	    <h3 >Evolución de la infraestructua</h3>
+	    <h3 >Evolución de la infraestructura</h3>
 	  </section>
 	  <section>
 	    <h3>Evolución de la infraestructura</h3>
@@ -234,7 +234,7 @@
 
 	<section>
 	  <section>
-	    <h2 >OpenStack</h2>
+	    <h2>El proyecto OpenStack</h2>
 	  </section>
 	  <section>
 	    <h3>OpenStack</h3>
@@ -354,26 +354,40 @@
 	    <h3>Principios de OpenStack</h3>
 	    <ul>
 	      <li>Código disponible bajo la licencia libre Apache 2.0</li>
-	      <li>Soporta todos los hipervisores disponibles</li>
+	      <li>Debe soportar todos los hipervisores disponibles</li>
 	      <li>Uso mediante APIs REST y formato de imagen abierto</li>
 	      <li>Proceso de diseño abierto:
 		<ul>
 		  <li>Blueprints</li>
 		  <li>Repositorios públicos (github)</li>
 		</ul>
-	      <li>Compromiso para adoptar estándares abiertos</li>
+	      <li>Compromiso de adoptar estándares abiertos</li>
 	      <li>Comunidad abierta y transparente</li>
 	      <a href="http://www.openstack.org/assets/openstack-welcome-guide.pdf">OpenStack Community. Welcome Guide</a>
 	    </ul>
 	  </section>
 	  <section>
-	    <h3>¿Por qué me puede interesar OpenStack?</h3>
+	    <h3>OpenStack Summits</h3>
+	    <ul>
+	      <li>Se organizan cada 6 meses con miles de participantes:
+		<ul>
+		  <li>The OpenStack Conference</li>
+		  <li>The OpenStack Design Summit</li>
+		</ul>
+	      <li><a href="https://www.openstack.org/videos/">Sesiones disponibles</a></li>
+	      <li>Próximo summit: Octubre 2016 en Barcelona</li>
+	    </ul>
+	    <p><a href="https://www.openstack.org/summit/">OpenStack
+	        summits</a></p>
+	  </section>
+	  <section>
+	    <h3>¿Por qué OpenStack?</h3>
 	    <ul>
 	      <li>Porque quiero gestionar el software para IaaS</li>
 	      <li>Software libre</li>
 	      <li>Proyecto estable</li>
 	      <li>Atrae gran cantidad de innovación</li>
-	      <li>Gran cantidad de funcionalidades, escenarios y casos de uso</li>
+	      <li>Gran variedad de usos, escenarios y mucha funcionalidad</li>
 	      <li>Funciona en hardware convencional</li>
 	    </ul>
 	  </section>
@@ -522,23 +536,6 @@
 	      Bias - "Vanilla OpenStack" Doesn't Exist and Never Will</a></small></p>
 	    </section>
 	    <section>
-	      <h3>OpenStack Summits</h3>
-	      <ul>
-		<li>Se organizan cada 6 meses con miles de participantes:
-		      <ul>
-			<li>The OpenStack Conference</li>
-			<li>The OpenStack Design Summit</li>
-		      </ul>
-		          <li><a href="https://www.openstack.org/videos/">Sesiones disponibles</a></li>
-		<li>Próximo summit:
-		      <ul>
-			<li>Octubre 2016: Barcelona</li>
-		</ul></li>
-	      </ul>
-	      <p><a href="https://www.openstack.org/summit/">OpenStack
-	          summits</a></p>
-	    </section>
-	    <section>
 	      <h3>Arquitectura de OpenStack</h3>
 	      <p><a href="http://docs.openstack.org/mitaka/networking-guide/deploy.html">Deployment scenarios</a></p>
 	    </section>	  
@@ -552,9 +549,12 @@
 	    <h3>Virtualización</h3>
 	    <p><a href="https://wiki.openstack.org/wiki/HypervisorSupportMatrix">HypervisorSupportMatrix</a></p>
 	    <img src="img/NovaCILoopMay2015.png" class="plain"/>
+	  </section>
 	</section>
 	<section>
-	  <h2>Casos de uso</h2>
+	  <section>
+	    <h2>Casos de uso</h2>
+	  </section>
 	  <section>
 	    <h3>Virtualización 2.0</h3>
 	    <ul>
@@ -563,10 +563,84 @@
 	      <li>Glance, Nova y Horizon</li>
 	      <li>El usuario puede gestionar su infraestructura</li>
 	      <li>Escenarios automáticos mediante plantillas (heat)</li>
-	      <li>Aplicaciones "nativas" cloud</li>
-	      <li>Regiones, zonas, celdas, afinidad/anti-afinidad, ...</li>
+	      <li>Aplicaciones distribuidas y "nativas" cloud</li>
+	      <li>Regiones, zonas, agregados, celdas, afinidad/anti-afinidad, ...</li>
 	    </ul>
 	  </section>
+	  <section>
+	    <h3>Almacenamiento de objetos</h3>
+	    <ul>
+	      <li>Usado ampliamente para el almacenamiento masivo en Internet</li>
+	      <li>API extremadamente simple</li>
+	      <li>Swift o Ceph</li>
+	      <li>Almacenamiento distribuido, con redundancia y muy escalable</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Almacenamiento de bloques</h3>
+	    <ul>
+	      <li>Equivale a una SAN</li>
+	      <li>Cinder</li>
+	      <li><a href="https://wiki.openstack.org/wiki/CinderSupportMatrix"> CinderSupportMatrix </a></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Virtualización de redes</h3>
+	    <ul>
+	      <li>Virtualización completa de la red de un CPD</li>
+	      <li>SDN</li>
+	      <li>Software defined Datacenter</li>
+	      <li>Neutron</li>
+	      <li>Múltiples "plugins":
+		<ul>
+		  <li>OpenvSwitch</li>
+		  <li>Nuage</li>
+		  <li>OpenContrail</li>
+		  <li>VMware NSX</li>
+		  <li>Midokura</li>
+		</ul>
+	      </li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Sistemas de ficheros en red</h3>
+	    <ul>
+	      <li>Manila</li>
+	      <li>NAS: NFS, CIFS</li>
+	      <li>Hardware: NetAPP, EMC, ...</li>
+	      <li>Shares: GlusterFS, CephFS, ZFS, ...</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Bare metal</h3>
+	    <ul>
+	      <li>Gestión de servidores físicos</li>
+	      <li>Ironic</li>
+	      <li>Instalación y configuración automática de servidores físicos</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Big Data</h3>
+	    <ul>
+	      <li>Sahara</li>
+	      <li>Hadoop, Hortonworks, Spark, etc.</li>
+	      <li>Se integran cargas con heat y nova</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Contenedores</h3>
+	    <ul>
+	      <li>Magnum</li>
+	      <li>Docker, Rocket?</li>
+	      <li>Kubernetes, Swarm?</li>
+	      <li>Gestión automatizada de máquinas virtuales o físicas que ejecutan contenedores</li> 
+	    </ul>
+	  </section>
+	  <!-- <section> -->
+	  <!--   <h3>SR-IOV</h3> -->
+	  <!--   <ul> -->
+	  <!--     <li><a href="https://www.openstack.org/marketplace/drivers/">Drivers</li> -->
+	      
 	</section>
 	<!-- <section> -->
 	<!--   <section> -->
@@ -601,52 +675,6 @@
 	<!--   </section> -->
 	<!-- </section> -->
 
-	<!-- <section> -->
-	<!--   <section> -->
-	<!--     <h3 >Private cloud administration</h3> -->
-	<!--   </section> -->
-	<!--   <section> -->
-	<!--     <h3>Enterprise "legacy" applications</h3> -->
-	<!--     <ul> -->
-	<!--       <li>Not fault-tolerant</li> -->
-	<!--       <li>Must run on smart hardware</li> -->
-	<!--       <li>Typically scales up</li> -->
-	<!--       <li>Runs on long-lived machines (virtual or not)</li> -->
-	<!--       <li>Redundancy provided by a lower level</li> -->
-	<!--     </ul> -->
-	<!--   </section> -->
-	<!--   <section> -->
-	<!--     <h3>"Cloud ready" applications</h3> -->
-	<!--     <ul> -->
-	<!--       <li>Fault-tolerant (resilience)</li> -->
-	<!--       <li>Typically runs on short-lived machines</li> -->
-	<!--       <li>Scale out</li> -->
-	<!--       <li>Elasticity</li> -->
-	<!--       <li>Smart applications</li> -->
-	<!--       <li>Conventional hardware</li> -->
-	<!--       <li>Automation</li> -->
-	<!--       <li>Agility</li> -->
-	<!--       <li>DevOps</li> -->
-	<!--     </ul> -->
-	<!--   </section> -->
-	<!--   <section> -->
-	<!--     <h3>"Cloud ready" or "legacy" applications?</h3> -->
-	<!--     <ul> -->
-	<!--       <li>Most current workloads are not cloud ready</li> -->
-	<!--       <li>IaaS is an evolution of virtualization for legacy -->
-	<!-- 	applications (virtualization 2.0)</li> -->
-	<!--       <li>Block storage is a SAN equivalent</li> -->
-	<!--       <li>Load balancers vs high availability clusters</li> -->
-	<!--       <li>Re-architecting legacy applications</li> -->
-	<!--       <li>What about cotainers? Is docker accelerating the -->
-	<!-- 	adoption of modern applications?</li> -->
-	<!--     </ul> -->
-	<!--     <p><small><a href="http://www.slideshare.net/KeithBasil/basil-w-0230introoverviewopenstackiaascloudsfinal">Keith -->
-	<!--     Basil - Introduction and Overview of OpenStack for -->
-	<!-- 	  IaaS</a></small></p> -->
-	<!--     <p><small><a href="http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story">Randy -->
-	<!--     Bias - Pets vs. Cattle: The Elastic Cloud Story</a></small></p> -->
-	<!--   </section> -->
 	<!--   <section> -->
 	<!--     <h3>Cloud administration</h3> -->
 	<!--     <ul> -->
